@@ -148,6 +148,18 @@ cards:
     title: Set Spa Temp - ~30s to update
 </pre>
 
-<img width="370" alt="Screen Shot 2023-06-03 at 4 55 02 pm" src="https://github.com/mel9320107/spa_pool/assets/54464040/fb1afcac-95e8-4ba5-9f2c-6922bbcbe065">
+<img width="600" alt="Screen Shot 2022-11-28 at 3 37 47 pm" src="https://github.com/mel9320107/spa_pool/assets/54464040/a86aae7d-19e1-4a11-88de-46ccc169be7a">
+
+* To change the temperature just manipulate the slider. The Set Temperature changes instantly, but the sensor will take around 30s to update.
+
+* In automations you can use this format to set the temperature or update the time:
+<pre>
+action:
+  - service: spa_pool.send_set_temp_command
+    data:
+      set_temp: 35
+  - service: spa_pool.send_time_command
+    data: {}
+</pre>
 
 Good luck!
