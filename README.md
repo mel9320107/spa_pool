@@ -22,11 +22,11 @@ The integration creates a platform that has attributes for all the fields in the
 
 * Find IP address of WiFi adapter from your router and port it is broadcasting from by logging into serial adapter from a browser window.
 
-* In configuration.yaml
+* In configuration.yaml (replace with your IP and port)
 <pre>
 spa_pool:
-  ip: <your Spa IP>
-  port: <your port>
+  ip: 192.168.0.100
+  port: 4257
 
 automation: !include automations.yaml
 sensor: !include sensor.yaml
@@ -42,7 +42,7 @@ Restart Home Assistant to see if an entity called sensor.spa_pool_rs_485_sensor 
 
 * In automations.yaml
 <pre>
-- id: '<unique id>'
+- id: 'any_unique_number'
   alias: Spa_set_temp
   description: ''
   trigger:
@@ -59,7 +59,7 @@ Restart Home Assistant to see if an entity called sensor.spa_pool_rs_485_sensor 
     data:
       set_temp: '{{ states(''input_number.spa_set_temp'') }}'
   mode: single
-- id: '<unique id>'
+- id: 'any_unique_number'
   alias: Initialise Spa Set Temp
   description: ''
   trigger:
