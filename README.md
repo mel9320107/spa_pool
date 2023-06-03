@@ -148,7 +148,7 @@ cards:
     title: Set Spa Temp - ~30s to update
 </pre>
 
-<img width="600" alt="Screen Shot 2022-11-28 at 3 37 47 pm" src="https://github.com/mel9320107/spa_pool/assets/54464040/a86aae7d-19e1-4a11-88de-46ccc169be7a">
+<img width="367" alt="Screen Shot 2023-06-03 at 5 06 30 pm" src="https://github.com/mel9320107/spa_pool/assets/54464040/bc076331-fa24-4a14-9027-010a596627bf">
 
 * To change the temperature just manipulate the slider. The Set Temperature changes instantly, but the sensor will take around 30s to update.
 
