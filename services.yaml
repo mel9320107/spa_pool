@@ -1,0 +1,21 @@
+send_time_command:
+  description: Sends the time command to the spa pool controller.
+  fields:
+    ip:
+      description: The IP address of the spa pool controller.
+      example: 192.168.0.101
+    port:
+      description: The port number to use for the connection.
+      example: 4257
+send_set_temp_command:
+  description: Sends a command to set the temperature.
+  fields:
+    set_temp:
+      description: Desired temperature in celcius - Range 26.5-40oC.
+      example: 37.5
+    ip:
+      description: The IP address of the spa pool controller.
+      example: 192.168.0.101
+    port:
+      description: The port number to use for the connection.
+      example: 4257
