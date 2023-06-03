@@ -1,0 +1,9 @@
+{
+  "domain": "spa_pool",
+  "name": "Spa Pool RS-485",
+  "documentation": "https://github.com/yourusername/spa_pool",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@yourusername"],
+  "version": "0.1.0"
+}
