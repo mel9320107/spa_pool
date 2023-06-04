@@ -8,7 +8,7 @@ To expand the code and add more features, this site is very useful.
 
 https://github.com/ccutrer/balboa_worldwide_app/wiki
 
-I wrote this code, because I couldn't find an integration to run on Home Assistant that has been installed on a Raspberry Pi with the standard install. Other repositories seem to need separate docker containers or Ruby and I couldn't figure out how to run these with my installation. Some of the integrations I tried wouldn't initialise properly (perhaps because I wasn't using the Balboa branded WiFi adapter). I could control the spa through the command line, but ran into issues automating piped commands in Home Assistant. When ChatGPT came out I wondered if I could use it to write an integration in Python. I have no Python training so it has been a steep learning curve, but I'm amazed ChatGPT 4.0 has helped me get something that works for me.
+I wrote this code, because I couldn't find an integration to run on Home Assistant that has been installed on a Raspberry Pi with the standard install. Other repositories seem to need separate docker containers or Ruby and I couldn't figure out how to run these with my installation. Some of the integrations I tried wouldn't initialise properly (perhaps because I wasn't using the Balboa branded WiFi adapter). I could control the spa through the command line, but ran into issues automating piped commands in Home Assistant. When ChatGPT came out I wondered if I could use it to write an integration in Python. I have no Python training so it has been a steep learning curve, but I'm amazed ChatGPT 4.0 has helped me get something that works.
 
 The integration creates a platform that has attributes for all the fields in the Spa Status Message. This gets updated every 30 seconds, so is a bit laggy. It also provides the ability to make service calls to change the temperature of the spa and update the time.
 
@@ -101,7 +101,7 @@ spa_set_temp:
   step: 0.5
 </pre>
 
-*Restart Home Assistant if needed to load in all the new yaml
+* Restart Home Assistant if needed to load in all the new yaml
 
 * In Lovelace make a manual card with the following yaml 
 <pre>
